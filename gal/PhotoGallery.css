@@ -1,0 +1,59 @@
+.amazon_scroller{
+    padding: 0px;
+    margin: 0px;
+	border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px; 
+    -khtml-border-radius: 10px; margin-top:-11px; margin-left:10px;
+}
+.amazon_scroller .amazon_scroller_nav{
+    position: absolute;
+    
+}
+.amazon_scroller .amazon_scroller_nav li{
+    cursor: pointer;
+    position: absolute;
+     list-style-type:none;
+     top:-105px;
+     top:-105px\9;
+     
+}
+.amazon_scroller .amazon_scroller_mask{
+    position: absolute;
+    margin-left: -20px;
+    margin-right: 10px;   
+    overflow: hidden;
+    
+    
+   
+}
+.amazon_scroller ul{
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    list-style-type:none;
+}
+.amazon_scroller ul li{
+    padding: 0px;
+    margin: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    list-style: none;
+    float: left;
+    text-align: center;
+    display:inline;
+    list-style-type:none;
+}
+.amazon_scroller ul li a{
+    text-decoration: none;
+}
+.amazon_scroller ul li a amazon_scroller_title{
+	overflow:hidden;
+}
+.amazon_scroller ul li a:hover{
+    text-decoration: underline;
+}
+.amazon_scroller ul li a img{
+    border: none;
+}

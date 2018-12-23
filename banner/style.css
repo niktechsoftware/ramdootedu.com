@@ -1,0 +1,112 @@
+/*** 
+set the width and height to match your images 
+**/
+
+#slideshow {
+    position:relative;
+    height:10px;
+	z-index:-1;
+    top: 0px;
+    left: 0px;
+}
+
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}
+
+#slideshow img {
+	/* Set rules to fill background */
+	min-height: 265px;
+	min-width: 680px;
+			
+	/* Set up proportionate scaling */
+	min-height: 265px;
+	min-width: 680px;
+			
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+		
+@media screen and (max-width: 1024px){
+	img.bg {
+	left: 50%;
+	margin-left: -512px; 
+}
+}
+		
+#page-wrap { 
+	position: relative;
+	width: 250px; 
+	margin: 50px auto; 
+	padding: 20px; 
+	background: #fff; 
+	-moz-box-shadow: 0 0 20px black; 
+	-webkit-box-shadow: 0 0 20px black; 
+	box-shadow: 0 0 20px black; 
+	-webkit-border-radius:12px;
+}
+
+p { 
+	font: 15px/2 Arial; 
+	margin: 0 0 30px 0; 
+	color: #fff;
+}
+
+#content {
+	width: 250px;
+	-webkit-border-radius:8px;
+	background-color:Black;
+	opacity:0.9;
+	
+	
+}
+
+
+a.Alumni
+{
+	width:218px; height:105px; background:url(images/banner-icons.html) -2px 0px; float:left; margin-left:13px; margin-top:3px;
+}
+a.Alumni:hover
+{
+	 background:url(images/banner-icons.html) -222px 0px; 
+}
+
+a.Facilites
+{
+	width:218px; height:105px; background:url(images/banner-icons.html) -3px -106px; float:left; margin-left:13px; margin-top:3px;
+}
+a.Facilites:hover
+{
+	 background:url(images/banner-icons.html) -222px -106px; 
+}
+
+a.infra
+{
+	width:218px; height:105px; background:url(images/banner-icons.html) -5px -216px; float:left; margin-left:13px; margin-top:3px;
+}
+a.infra:hover
+{
+	 background:url(images/banner-icons.html) -222px -216px; 
+}
+
+.banner-icons
+{
+	width:250px; height:330px; background:url(images/blure.png) repeat; float:left; margin-top:-386px;margin-left:14px; border:1px solid #fff; border-radius:8px;
+}
+
+
