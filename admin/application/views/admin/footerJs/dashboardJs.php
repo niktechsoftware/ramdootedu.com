@@ -1,0 +1,24 @@
+<!-- Javascripts -->
+        <script src="<?php echo base_url()?>assets/admin/assets/plugins/jquery/jquery-2.1.3.min.js"></script>
+        <script src="<?php echo base_url()?>assets/admin/assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+        <script src="<?php echo base_url()?>assets/admin/assets/plugins/pace-master/pace.min.js"></script>
+        <script src="<?php echo base_url()?>assets/admin/assets/plugins/jquery-blockui/jquery.blockui.js"></script>
+        <script src="<?php echo base_url()?>assets/admin/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="<?php echo base_url()?>assets/admin/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="<?php echo base_url()?>assets/admin/assets/plugins/switchery/switchery.min.js"></script>
+        <script src="<?php echo base_url()?>assets/admin/assets/plugins/uniform/jquery.uniform.min.js"></script>
+        <script src="<?php echo base_url()?>assets/admin/assets/plugins/classie/classie.js"></script>
+        <script src="<?php echo base_url()?>assets/admin/assets/plugins/waves/waves.min.js"></script>
+        <script src="<?php echo base_url()?>assets/admin/assets/plugins/3d-bold-navigation/js/main.js"></script>
+        <script src="<?php echo base_url()?>assets/admin/assets/plugins/waypoints/jquery.waypoints.min.js"></script>
+        <script src="<?php echo base_url()?>assets/admin/assets/plugins/jquery-counterup/jquery.counterup.min.js"></script>
+        <script src="<?php echo base_url()?>assets/admin/assets/plugins/toastr/toastr.min.js"></script>
+        <script src="<?php echo base_url()?>assets/admin/assets/plugins/flot/jquery.flot.min.js"></script>
+        <script src="<?php echo base_url()?>assets/admin/assets/plugins/flot/jquery.flot.time.min.js"></script>
+        <script src="<?php echo base_url()?>assets/admin/assets/plugins/flot/jquery.flot.symbol.min.js"></script>
+        <script src="<?php echo base_url()?>assets/admin/assets/plugins/flot/jquery.flot.resize.min.js"></script>
+        <script src="<?php echo base_url()?>assets/admin/assets/plugins/flot/jquery.flot.tooltip.min.js"></script>
+        <script src="<?php echo base_url()?>assets/admin/assets/plugins/curvedlines/curvedLines.js"></script>
+        <script src="<?php echo base_url()?>assets/admin/assets/plugins/metrojs/MetroJs.min.js"></script>
+        <script src="<?php echo base_url()?>assets/admin/assets/js/modern.min.js"></script>
+        <script src="<?php echo base_url()?>assets/admin/assets/js/pages/dashboard.js"></script>

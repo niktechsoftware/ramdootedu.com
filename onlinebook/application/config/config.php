@@ -16,7 +16,7 @@
 | environments.
 |
 */
-$config['base_url'] = 'http://ramdootedu.com/onlinebook/';
+$config['base_url'] = 'http://localhost/ramdootedu.com/onlinebook/';
 
 /*
 |--------------------------------------------------------------------------

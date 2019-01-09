@@ -76,40 +76,40 @@
 	                                <strong><?php echo $i; ?></strong>
 	                             </td>
 	                            <td>
-	                                  <input type='text' id="item_name-<?php echo $i; ?>" class='form-control item_name' name="item_name<?php echo $i; ?>" width='100%' />
+	                                  <input type='text' id="item_name-<?php echo $i; ?>" class='form-control item_name' name="item_name<?php echo $i; ?>" width='100%'  readonly="readonly"/>
 	                                  <div id ="printS<?php echo $i;?>"></div>
 	                            </td>
 	                            <td>
-	                                   <input id="item_price<?php echo $i; ?>" class='form-control'  name="item_price<?php echo $i; ?>" width='100%'>
-	                                    <input type="hidden" id="company_name<?php echo $i; ?>" class='form-control'  name="company_name<?php echo $i; ?>" width='100%'>
-	                                     <input type="hidden" id="product_code<?php echo $i; ?>" class='form-control'  name="product_code<?php echo $i; ?>" width='100%'>
+	                                   <input id="item_price<?php echo $i; ?>" class='form-control'  name="item_price<?php echo $i; ?>" width='100%' readonly>
+	                                    <input type="hidden"  id="company_name<?php echo $i; ?>" class='form-control'  name="company_name<?php echo $i; ?>" width='100%'>
+	                                     <input type="hidden" id="product_code<?php echo $i; ?>" class='form-control'  name="product_code<?php echo $i; ?>" width='100%' readonly="readonly">
 	                            </td>
 	                            <td>
-	                                   <input type='text' class='form-control' id='hsn_sac<?php echo $i; ?>' name="hsn_sac<?php echo $i; ?>" width='100%'>
+	                                   <input type='text' class='form-control' id='hsn_sac<?php echo $i; ?>' name="hsn_sac<?php echo $i; ?>" width='100%' readonly>
 	                            </td>
 	                            <td>
-	                                <input id="avlQ<?php echo $i; ?>" name="avlQ<?php echo $i; ?>" class='form-control' width='100%' type="text"/>
+	                                <input id="avlQ<?php echo $i; ?>" name="avlQ<?php echo $i; ?>" class='form-control' width='100%' type="text"/ readonly>
 	                            </td>
 	                            <td>
 	                                <input id="item_quantity<?php echo $i; ?>" name="item_quantity<?php echo $i; ?>" class='form-control' width='100%' type="text"/>
 	                            </td>
 	                             <td>
-	                                <input id="vat<?php echo $i; ?>" name="vat<?php echo $i; ?>"  width='100%' class='form-control' type="text"/>
+	                                <input id="vat<?php echo $i; ?>" name="vat<?php echo $i; ?>"  width='100%' class='form-control' type="text"/ readonly>
 	                            </td>
 	                             <td>
-	                                <input id="sat<?php echo $i; ?>" name="sat<?php echo $i; ?>"  width='100%' class='form-control' type="text"/>
+	                                <input id="sat<?php echo $i; ?>" name="sat<?php echo $i; ?>"  width='100%' class='form-control' type="text"/ readonly>
 	                            </td>
 	                            <td>
-	                                <input id="item_discount<?php echo $i; ?>" name="item_discount<?php echo $i; ?>"  class='form-control' width='100%' type="text"/>
+	                                <input id="item_discount<?php echo $i; ?>" name="item_discount<?php echo $i; ?>"  class='form-control' width='100%' type="text"/ readonly>
 	                            </td>
 	                            <td>
-	                                <input id="discount<?php echo $i; ?>" name="discount<?php echo $i; ?>" class='form-control' width='100%' type="text"/>
+	                                <input id="discount<?php echo $i; ?>" name="discount<?php echo $i; ?>" class='form-control' width='100%' type="text"/ readonly>
 	                            </td>
 	                            <td>
-	                                  <input id="total_price<?php echo $i; ?>" name="total_price<?php echo $i; ?>" class='form-control' width='100%' type="text"/>
+	                                  <input id="total_price<?php echo $i; ?>" name="total_price<?php echo $i; ?>" class='form-control' width='100%' type="text"/ readonly>
 	                            </td>
 	                            <td>
-	                                <input id="sub_total<?php echo $i; ?>" name="sub_total<?php echo $i; ?>" class='form-control' width='100%' type="text"/>
+	                                <input id="sub_total<?php echo $i; ?>" name="sub_total<?php echo $i; ?>" class='form-control' width='100%' type="text"/readonly>
 	                            </td>
 	                            <td>
 	                            	<?php if($i != 1 && $i != 2 && $i != 3 && $i != 4 && $i != 5 && $i != 6 && $i != 7 && $i != 8 ){?>
@@ -215,18 +215,18 @@
 	                       <tr> 
 	                       	<td colspan="3"><strong>Output CGST (%)</strong></td>
 										
-								 <td colspan="5"><input id="outputVAT" name="outputVAT" style="width:180px;" type="text"/></td>
+								 <td colspan="5"><input id="outputVAT" name="outputVAT" style="width:180px;" type="text"/ readonly></td>
 					
 							</tr>
 							 <tr> 
 	                       	<td colspan="3"><strong>Output SGST (%)</strong></td>
 										
-								 <td colspan="5"><input id="outputSAT" name="outputSAT" style="width:180px;" type="text"/></td>
+								 <td colspan="5"><input id="outputSAT" name="outputSAT" style="width:180px;" type="text"/ readonly></td>
 					
 							</tr>
 	                       <tr>
 	                            	<td colspan="3"><strong>Total</strong></td>
-	                                <td colspan="3"><input id="total" name="total" style="width:180px;" type="text" required /></td>
+	                                <td colspan="3"><input id="total" name="total" style="width:180px;" type="text" required readonly/></td>
 	                                <!--	<td colspan="1"><strong>Discount</strong></td>
 	                                <td  colspan="1">
 	                                	<input type = "text" name="discount" id ="discount" style="width:180px;"  />
@@ -260,7 +260,7 @@
 	                  </div>
 	                  <div class="col-md-4">
 	                  <b id="dt"></b>
-	                    			<input type="submit" name="day_book_detail" value="Save & Print Reciept" class="btn btn-success">
+	                    			<input type="submit" name="day_book_detail" value="Save & Print Reciept" class="btn btn-success" readonly>
 	                    	</div>
 	              </div>
 										

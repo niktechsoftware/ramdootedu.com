@@ -75,20 +75,20 @@
 	                            <td width="40">
 	                                <strong><?php echo $i; ?></strong>
 	                             </td>
-	                            <td>
-	                                  <input type='text' id="item_name-<?php echo $i; ?>" class='form-control item_name' name="item_name<?php echo $i; ?>" width='100%' />
+	                            <td  readonly="readonly">
+	                                  <input type='text'  id="item_name-<?php echo $i; ?>" class='form-control item_name' name="item_name<?php echo $i; ?>" width='100%' />
 	                                  <div id ="printS<?php echo $i;?>"></div>
 	                            </td>
 	                            <td>
-	                                   <input id="item_price<?php echo $i; ?>" class='form-control'  name="item_price<?php echo $i; ?>" width='100%'>
-	                                    <input type="hidden" id="company_name<?php echo $i; ?>" class='form-control'  name="company_name<?php echo $i; ?>" width='100%'>
-	                                     <input type="hidden" id="product_code<?php echo $i; ?>" class='form-control'  name="product_code<?php echo $i; ?>" width='100%'>
+	                                   <input id="item_price<?php echo $i; ?>" class='form-control'  name="item_price<?php echo $i; ?>" width='100%' />
+	                                    <input type="hidden" id="company_name<?php echo $i; ?>" class='form-control'  name="company_name<?php echo $i; ?>" width='100%' >
+	                                     <input type="hidden" id="product_code<?php echo $i; ?>" class='form-control'  name="product_code<?php echo $i; ?>" width='100%' >
 	                            </td>
 	                            <td>
-	                                   <input type='text' class='form-control' id='hsn_sac<?php echo $i; ?>' name="hsn_sac<?php echo $i; ?>" width='100%'>
+	                                   <input type='text' class='form-control' id='hsn_sac<?php echo $i; ?>' name="hsn_sac<?php echo $i; ?>" width='100%'/>
 	                            </td>
 	                            <td>
-	                                <input id="avlQ<?php echo $i; ?>" name="avlQ<?php echo $i; ?>" class='form-control' width='100%' type="text"/>
+	                                <input id="avlQ<?php echo $i; ?>" name="avlQ<?php echo $i; ?>" class='form-control' width='100%' type="text" />
 	                            </td>
 	                            <td>
 	                                <input id="item_quantity<?php echo $i; ?>" name="item_quantity<?php echo $i; ?>" class='form-control' width='100%' type="text"/>
