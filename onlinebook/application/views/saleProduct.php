@@ -36,7 +36,7 @@
 								</select>
 							</div>
 							<div class="col-sm-4">
-								<input class="form-control" name="dis" id="dis" placeholder="Discount (%)" type="text"/>
+								<input class="form-control" name="dis" id="dis"  type="hidden" value="0"/>
 							</div>
 						</div>
 					</div>
@@ -76,11 +76,11 @@
 	                                <strong><?php echo $i; ?></strong>
 	                             </td>
 	                            <td>
-	                                  <input type='text' id="item_name-<?php echo $i; ?>" class='form-control item_name' name="item_name<?php echo $i; ?>" width='100%'  readonly="readonly"/>
+	                                  <input type='text' id="item_name-<?php echo $i; ?>" class='form-control item_name' name="item_name<?php echo $i; ?>" width='100%' readonly />
 	                                  <div id ="printS<?php echo $i;?>"></div>
 	                            </td>
 	                            <td>
-	                                   <input id="item_price<?php echo $i; ?>" class='form-control'  name="item_price<?php echo $i; ?>" width='100%' readonly>
+	                                   <input id="item_price<?php echo $i; ?>" class='form-control'  name="item_price<?php echo $i; ?>" width='100%' readonly >
 	                                    <input type="hidden"  id="company_name<?php echo $i; ?>" class='form-control'  name="company_name<?php echo $i; ?>" width='100%'>
 	                                     <input type="hidden" id="product_code<?php echo $i; ?>" class='form-control'  name="product_code<?php echo $i; ?>" width='100%' readonly="readonly">
 	                            </td>
@@ -212,18 +212,7 @@
 	                                <td colspan="5"><input id="p_balance" name="p_balance" style="width:180px;" type="text"/></td>
 	                               
 	                       </tr>-->
-	                       <tr> 
-	                       	<td colspan="3"><strong>Output CGST (%)</strong></td>
-										
-								 <td colspan="5"><input id="outputVAT" name="outputVAT" style="width:180px;" type="text"/ readonly></td>
-					
-							</tr>
-							 <tr> 
-	                       	<td colspan="3"><strong>Output SGST (%)</strong></td>
-										
-								 <td colspan="5"><input id="outputSAT" name="outputSAT" style="width:180px;" type="text"/ readonly></td>
-					
-							</tr>
+	                      
 	                       <tr>
 	                            	<td colspan="3"><strong>Total</strong></td>
 	                                <td colspan="3"><input id="total" name="total" style="width:180px;" type="text" required readonly/></td>

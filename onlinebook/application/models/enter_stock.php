@@ -13,8 +13,22 @@ class Enter_stock extends CI_Model{
 	}
 	
 	function getItemByName($name){
-		$this->db->where("name",$name);
-		return $this->db->get("enter_stock1");
+	
+		$rows = $this->db->query("SELECT company_name, product_code, prize_perunit, vat, sat, discount, pRate FROM `enter_stock1` WHERE  `name`='".$name."' ORDER BY `sno` LIMIT 1;")->result();
+		
+		$queryString = "SELECT SUM(`extraQuantity`) AS `extraQuantity`  FROM `enter_stock1` WHERE  `name`='".$name."';";
+		$oldQuantity = $this->db->query($queryString)->result();
+		
+		$queryString = "SELECT SUM(`product_quantity`) AS `total` FROM `product_sale` WHERE  `company_name`='".$name."';";
+		$saleQuantity = $this->db->query($queryString)->result();
+		
+		$actualq = $oldQuantity[0]->extraQuantity - $saleQuantity[0]->total;
+		
+		$dataArray = array(
+		    'otherData' => $rows,
+		    'quantity' => $actualq
+		);
+		echo json_encode($dataArray);
 	}
 	
 	function getItem($itemNo){

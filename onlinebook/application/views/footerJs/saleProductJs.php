@@ -86,7 +86,8 @@
 					});
 				});
 				
-				$(document).on('change', '.item_name', function(event) {
+				$(document).on('change', '.item_name-', function(event) {
+				    alert("rahul");
 				    let currentID = event.target.id.split('-')[1];
 				    let name = event.target.value;
 				    let classID = $("#ref").val();
@@ -125,12 +126,12 @@
 						$("#del<?php echo $i;?>").hide();
 					});
 
-					<?php if($i != 4){?>
+					<?php if($i != 0){?>
 						$('#del<?php echo $i; ?>').click(function(){
 							$("#row<?php echo $i;?>").hide();
 							$("#add<?php echo $i-1;?>").show();
 							$("#del<?php echo $i-1;?>").show();
-							$('#item_name<?php echo $i; ?>').val("");
+							$('#item_name-<?php echo $i; ?>').val("");
 							$('#item_comp<?php echo $i; ?>').val("");
 							
 							$('#item_price<?php echo $i; ?>').val("");
@@ -144,20 +145,28 @@
 						});
 					<?php }?>
 
-				// 	$( "#item_name<?php echo $i; ?>" ).autocomplete({
-				//     	source: '<?php echo site_url("ajaxSale/getData/?");?>',
-				//     	close: function(){
-				// 			var name = $("#item_name<?php echo $i;?>").val();
-				// 			$.post("<?php echo site_url("ajaxSale/getItemData") ?>", {name : name}, function(data){		
-				// 				var d = jQuery.parseJSON(data);				
-				// 				 $('#product_code<?php echo $i; ?>').val(d.product_code);
-				// 				 $('#hsn_sac<?php echo $i; ?>').val(d.hsn_sac);
-								 
-								 
-				// 				 $('#company_name<?php echo $i; ?>').val(d.company_name);
-				// 			});
-				// 		}
-				//     });				
+			 	$("#item_name-<?php echo $i; ?>" ).autocomplete({
+				    	source: '<?php echo site_url("ajaxSale/getData/?");?>',
+			    	close: function(){
+							var name = $("#item_name-<?php echo $i;?>").val();
+							let currentID = event.target.id.split('-')[1];
+							let classID = $("#ref").val();
+				 			$.post("<?php echo site_url("ajaxSale/getItemData") ?>", {name : name}, function(data){		
+							 let response = JSON.parse(data);
+								
+								$(`#item_price${currentID}`).val(response.otherData[0].prize_perunit);
+                            $(`#company_name${currentID}`).val(response.otherData[0].company_name);
+                            $(`#product_code${currentID}`).val(response.otherData[0].product_code);
+                            $(`#hsn_sac${currentID}`).val(classID);
+                            $(`#avlQ${currentID}`).val(response.quantity);
+                            $(`#vat${currentID}`).val(response.otherData[0].vat);
+                            $(`#sat${currentID}`).val(response.otherData[0].sat);
+                            $(`#item_discount${currentID}`).val(response.otherData[0].discount);
+                            
+				 				
+				 			});
+				 		}
+			     });				
 					
 				
 					
