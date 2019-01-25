@@ -27,3 +27,4 @@
 [30-Nov-2018 02:23:31 Asia/Calcutta] PHP Parse error:  syntax error, unexpected end of file in /home3/gfincuct/public_html/ramdootedu.com/onlinebook/application/views/productDetail.php on line 78
 [08-Dec-2018 13:42:02 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '}' in /home3/gfincuct/public_html/ramdootedu.com/onlinebook/application/controllers/patient.php on line 406
 [08-Dec-2018 13:42:09 Asia/Calcutta] PHP Parse error:  syntax error, unexpected '}' in /home3/gfincuct/public_html/ramdootedu.com/onlinebook/application/controllers/patient.php on line 406
+[09-Jan-2019 21:29:33 Asia/Calcutta] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home3/gfincuct/public_html/ramdootedu.com/onlinebook/application/controllers/ajaxSale.php on line 312
