@@ -1,4 +1,4 @@
 <?php
   $connect = mysqli_connect('localhost','root','');
-  mysqli_select_db('ramdoot');
+  mysqli_select_db('gfincuct_ramdoo');
 ?>
