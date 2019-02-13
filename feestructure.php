@@ -179,38 +179,34 @@
         </tr>
         <tr>
             <td>LKG</td>
-            <td>2000</td>
-            <td>950</td>
+            <td>2500</td>
+            <td>1030</td>
         </tr>
         <tr>
             <td>UKG</td>
-            <td>2000</td>
-            <td>1000</td>
+            <td>2500</td>
+            <td>1080</td>
         </tr>
         <tr>
-            <td>I</td>
-            <td>2500</td>
-            <td>1150</td>
+            <td>I-V</td>
+            <td>3500</td>
+            <td>1300</td>
         </tr>
-        <tr>
-            <td>II - V</td>
-            <td>2500</td>
-            <td>1200</td>
-        </tr>
+        
         <tr>
             <td>VI-VIII</td>
-            <td>3000</td>
-            <td>1500</td>
+            <td>4500</td>
+            <td>1620</td>
         </tr>
         <tr>
             <td>IX-X</td>
-            <td>3500</td>
-            <td>2000</td>
+            <td>5500</td>
+            <td>2170</td>
         </tr>
          <tr>
             <td>XI</td>
-            <td>4000</td>
-            <td>2500</td>
+            <td>6500</td>
+            <td>2700</td>
         </tr>
     </tbody>
 </table>
@@ -225,32 +221,29 @@
             <td><strong>Monthly Composite Fee</strong></td>
         </tr>
         <tr>
-            <td colspan="2">LKG</td>
-            <td>950</td>
+            <td colspan="2">PG-LKG</td>
+            <td>1030</td>
         </tr>
         <tr>
             <td colspan="2">UKG</td>
-            <td>1000</td>
+            <td>1080</td>
         </tr>
         <tr>
-            <td colspan="2">I</td>
-            <td>1150</td>
+            <td colspan="2">I-V</td>
+            <td>1300</td>
         </tr>
+       
         <tr>
-            <td colspan="2">II - V</td>
-            <td>1200</td>
-        </tr>
-        <tr>
-            <td colspan="2">VI - XIII</td>
-            <td>1500</td>
+            <td colspan="2">VI - VIII</td>
+            <td>1620</td>
         </tr>
         <tr>
             <td colspan="2">IX - X</td>
-            <td>2000</td>
+            <td>2170</td>
         </tr>
           <tr>
             <td colspan="2">XI</td>
-            <td>2650</td>
+            <td>2700</td>
         </tr>
     </tbody>
 </table>
