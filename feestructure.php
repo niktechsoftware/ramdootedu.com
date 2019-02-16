@@ -170,7 +170,7 @@
 <table width="99%" cellspacing="0" cellpadding="5" border="1" align="center" style="background-color:white;">
     <tbody>
         <tr>
-            <td colspan="3" align="center"><strong>New Student 2018-19</strong></td>
+            <td colspan="3" align="center"><strong>New Student 2019-20</strong></td>
         </tr>
         <tr>
             <td><strong>Class</strong></td>
@@ -178,7 +178,7 @@
             <td><strong>Monthly Composite Fee</strong></td>
         </tr>
         <tr>
-            <td>LKG</td>
+            <td>PG-LKG</td>
             <td>2500</td>
             <td>1030</td>
         </tr>
@@ -214,7 +214,7 @@
 <table width="99%" cellspacing="0" cellpadding="5" border="1" align="center" style="background-color:white;">
     <tbody>
         <tr>
-            <td colspan="3" align="center"><strong>Old Student 2018-19</strong></td>
+            <td colspan="3" align="center"><strong>New Student 2019-20</strong></td>
         </tr>
         <tr>
             <td colspan="2"><strong>Class</strong></td>
