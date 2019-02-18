@@ -49,9 +49,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '';
-$db['default']['database'] = 'ramdoot';
+$db['default']['username'] = 'gfincuct_book';
+$db['default']['password'] = 'Rahul!123singh';
+$db['default']['database'] = 'gfincuct_onlinebook';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
