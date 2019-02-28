@@ -101,20 +101,20 @@
 					
 				</td>
 				<td style="border: none;">
-					<h3 align="left" style="text-transform:uppercase; margin-left:50px;"><?php echo $info->cilnic_name; ?></h3>
-			        <h4 align="left" style="font-variant:small-caps; margin-left:70px;">
-						<?php echo $info->address_1.", ".$info->address_2; ?>
+					<h3 align="left" style="text-transform:uppercase; margin-left:150px; font-size:300%;"><?php echo $info->cilnic_name; ?></h3>
+			        <h4 align="left" style="font-variant:small-caps; font-size:130%; margin-left:190px;">
+						<?php echo $info->address_1." Mobile ".$info->mobile_number; ?>
 			        </h4>
-			        <h5 align="left" style="font-variant:small-caps; margin-left:70px;">
+			        <h5 align="left" style="font-variant:small-caps; font-size:100%; margin-left:280px;">
 						<?php if(strlen($info->phone_number > 0 )){echo "Phone : ".$info->phone_number.", ";} ?>
-			            <?php echo "Mobile : ".$info->mobile_number; ?>
+			            <?php //echo " : ".$info->mobile_number; ?>
 			        </h5>
 			         <!--<h4 align="left" style="font-variant:small-caps; margin-left:80px;">
 						<?php if(strlen($info->fax_number > 0 )){echo "Company's GST NO. : ".$info->fax_number." ";} ?>
 			           -->
 			        </h4>
 			        <h5 align="left" style="font-variant:small-caps; margin-left:80px;">
-						<?php echo "Emailid.:inforamdootedu.com" ?>
+						<?php //echo "Emailid.:inforamdootedu.com" ?>
 			           
 			        </h5>
 			         <!-- <h4 align="left" style="font-variant:small-caps; margin-left:80px;">
@@ -193,7 +193,7 @@
              <br>
 					<div  style="margin-left:180px;"></br></br></br>
 						<h2 style="border: 0px solid #000; padding: 4px; width: 200px; margin-left:150px;">
-							SALE INVOICE
+							ESTIMATE
 						</h2>
 			</div>
 		 <?php $this->db->where("salebill_no",$this->uri->segment(3));
@@ -259,36 +259,10 @@
 	  	  <?php $i++; endforeach;?>
 	  	
 		 
-		  <tr>
-		  <td class="total-line" colspan="5"><strong>Output CGST </strong></td>
-		 
-		      <td class="total-value"><div id="total"><?php echo $outputvat."%"; ?></div></td>
-		       <td class="total-value"><div id="total"></div></td>
-		      <td class="total-value"><div id="total"></div></td>
-		      <td class="total-value"><div id="total"></div></td>
-		      <td class="total-value"><div id="total"></div></td>
-		      <td style="border: 1px solid #000;"><div id="total"></div><?php $vat = ($outputvat*$printvat->total)/100; echo $vat;?></td>
-		      </tr>
-		      <tr>
-		       <td class="total-line" colspan="5"><strong>Output SGST </strong></td>
-		      <td class="total-value"><div id="total"><?php echo $outputsat."%"; ?></div></td>
-		      <td class="total-value"><div id="total"></div></td>
-		      <td class="total-value"><div id="total"></div></td>
-		      <td class="total-value"><div id="total"></div></td>
-		      <td class="total-value"><div id="total"></div></td>
-		      <td style="border: 1px solid #000;"><div id="total"></div><?php $vas = ($outputsat*$printvat->total)/100; echo $vas;?></td>
-		      </tr>
-		      
-		        <tr>
-              <td class="total-line" colspan="5"><strong>Total Discount</strong></td>
-               <td class="total-value"><div id="total"></div></td>
-		      <td class="total-value"><div id="total"></div></td>
-		      <td class="total-value"><div id="total"></div></td>
-		      <td class="total-value"><div id="total"></div></td>
-		       <td class="total-value"><div id="total"></div></td>
-		      <td style="border: 1px solid #000;"><div id="total"><?php echo $printvat->discount; ?></div></td>
 		  
-		  </tr>
+		     
+		      
+		        
 		   
 		   <tr>
 		      <td colspan="10" align="center" style="border: 1px solid #000;"><strong>Total</strong></td>
@@ -310,14 +284,8 @@
 		<table width="100%" align ="center">
 		
 				<tr>
-						<td width="50%" >Pre Autheticated By</br>
-						</br>
-						</br>
-						Pre Autheticated By</br>
-						Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br>
-						Designation:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br>
-						</td>
-						<td width="50%" >For RAMDOOT SALES & SERVICE</br>
+					<td></br>
+					
 						</br>
 						</br>
 						Issuing Signatory </br>
@@ -327,32 +295,7 @@
 						</td>
 				</tr>
 		</table>
-		<div >
-	</br>
-		<div >
-		</br>
-		</br>
-		<h3>BANK NAME:</h3>UNION BANK OF INDIA 
-		<h3>ACCOUNT NUMBER:</h3>xxxxxxxxxxxxx
-		<h3>IFSC CODE:</h3>xxxxxxxxx
-		<h3>ADDRESS / PIN NO.:</h3>SARVODAYA NAGAR, 208005
-		
-		</div>
-		<div style="margin-left: 500px  ; margin-top:-170px">
-		</br>
-		</br>
-		<h3>BANK NAME:</h3>INDIAN OVERSEAS BANK
-		<h3>ACCOUNT NUMBER:</h3>xxxxxxxx
-		<h3>IFSC CODE:</h3>xxxxxxxxxxxxx
-		<h3>ADDRESS / PIN NO.:</h3>BURRA KANPUR, 208027
-		
-		</div>
-		  <h3>Terms & conditions :</h3>
-		  1). Goods once sold will not be taken back</br>
-		  2). If the payment will not be made on due date the interest @24% per annum shall be charged</br>
-		 <b> Declaration</b></br>
-		  We declare that this invoice shows the actual price of the goods described and that all perticulars are true and correct.NET 30 Days. Finance Charge of 1.5% will be made on unpaid balances after 30 days.
-		</div>
+	
 		</br>
 		
 

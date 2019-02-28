@@ -93,7 +93,7 @@ class Bill_info extends CI_Model{
 		$this->opening_closing_balance->update($cu_closing);
 		$daybook = array(
 				'paid_to'		=>$this->input->post("companyName"),
-				'paid_by'		=>"Zap Computers",
+				'paid_by'		=>"Samrat Pushtak",
 				'reason'		=>"Purchase ",
 				'dabit_cradit'	=>"Debit",
 				'total_amount'	=>$this->input->post("total_prize"),

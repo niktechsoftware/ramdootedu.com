@@ -87,14 +87,13 @@
                             <ul class="sub-menu">
                                 <li><a href="<?php echo base_url();?>dayBook/dailyExpence.jsp">Daily Expence</a></li>
                                 <li><a href="<?php echo base_url();?>dayBook/dbook.jsp">DayBook Detail</a></li>
-                                <li><a href="<?php echo base_url();?>dayBook/rSaleList.jsp">Refrance Sale List</a></li>
+                              
                             </ul>
                         </li>
                         <?php } ?>
                         <li class="droplink"><a href="#"><span class="menu-icon icon-globe"></span><p>Logout</p><span class="arrow"></span></a>
                             <ul class="sub-menu">
                                 <li><a href="<?php echo base_url();?>web/query.jsp">Query/Contact List</a></li>
-                                 <li><a href="<?php echo base_url();?>login/changepass.jsp">Change Password</a></li>
                                 <li><a href="<?php echo base_url();?>login/logout.jsp">Logout</a></li>
                             </ul>
                         </li>

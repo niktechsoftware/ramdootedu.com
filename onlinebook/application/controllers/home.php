@@ -105,7 +105,8 @@ class Home extends CI_Controller{
 	
 	public function getSubjects() {
 	    $classID = $this->input->post("classID");
-	    $subjects = $this->db->query('SELECT * FROM `enter_stock1` WHERE `hsn_sac`='.$classID.' GROUP BY `name` ORDER BY `sno` DESC;')->result();
+	    $copy=21;
+	    $subjects = $this->db->query('SELECT * FROM `enter_stock1` WHERE (`hsn_sac`='.$classID.' or `hsn_sac`='.$copy.')  GROUP BY `name` ORDER BY `sno` DESC;')->result();
 	    $finalData =  array();
 	    foreach($subjects AS $key => $value):
 	        $subject = $this->db->query('SELECT `booksubject` FROM `booksubject` WHERE `id`='.$value->company_name.';')->row();

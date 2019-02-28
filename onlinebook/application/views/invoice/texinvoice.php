@@ -259,36 +259,7 @@
 	  	  <?php $i++; endforeach;?>
 	  	
 		 
-		  <tr>
-		  <td class="total-line" colspan="5"><strong>Output CGST </strong></td>
-		 
-		      <td class="total-value"><div id="total"><?php echo $outputvat."%"; ?></div></td>
-		       <td class="total-value"><div id="total"></div></td>
-		      <td class="total-value"><div id="total"></div></td>
-		      <td class="total-value"><div id="total"></div></td>
-		      <td class="total-value"><div id="total"></div></td>
-		      <td style="border: 1px solid #000;"><div id="total"></div><?php $vat = ($outputvat*$printvat->total)/100; echo $vat;?></td>
-		      </tr>
-		      <tr>
-		       <td class="total-line" colspan="5"><strong>Output SGST </strong></td>
-		      <td class="total-value"><div id="total"><?php echo $outputsat."%"; ?></div></td>
-		      <td class="total-value"><div id="total"></div></td>
-		      <td class="total-value"><div id="total"></div></td>
-		      <td class="total-value"><div id="total"></div></td>
-		      <td class="total-value"><div id="total"></div></td>
-		      <td style="border: 1px solid #000;"><div id="total"></div><?php $vas = ($outputsat*$printvat->total)/100; echo $vas;?></td>
-		      </tr>
-		      
-		        <tr>
-              <td class="total-line" colspan="5"><strong>Total Discount</strong></td>
-               <td class="total-value"><div id="total"></div></td>
-		      <td class="total-value"><div id="total"></div></td>
-		      <td class="total-value"><div id="total"></div></td>
-		      <td class="total-value"><div id="total"></div></td>
-		       <td class="total-value"><div id="total"></div></td>
-		      <td style="border: 1px solid #000;"><div id="total"><?php echo $printvat->discount; ?></div></td>
 		  
-		  </tr>
 		   
 		   <tr>
 		      <td colspan="10" align="center" style="border: 1px solid #000;"><strong>Total</strong></td>

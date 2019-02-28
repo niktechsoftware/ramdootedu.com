@@ -52,46 +52,5 @@ class Login extends CI_Controller{
 	function forgot(){
 		$this->load->view("forgot");
 	}
-	function changepass(){
-		$a= $this->session->userdata("name");
-		$data['subPage'] = 'Change Password';
-		$data['smallTitle'] = 'Change Password';
-		$data['pageTitle'] = 'Change password';
-		$data['title'] = 'Change Your Password';
-		$this->db->where('username',$a);
-
-		$data['body']=$this->db->get('general_settings')->row();
-		
-		$data['headerCss'] = 'headerCss/patientCss';
-		$data['footerJs'] = 'footerJs/patientJs';
-		$data['mainContent'] = 'changepass';
-	
-		$this->load->view("include/template", $data);
-	
-		}
-	function changepassword()
-	{
-		$id = $this->input->post('id');
-		 $newpass=$this->input->post('newpass');
-		 $confirmpass=$this->input->post('confirmpass');
-		 if($confirmpass==$newpass)
-		 {
-		 	$abc=md5($confirmpass);
-		 	$a=array('password'=>$abc);
-		 	$this->db->where('id',$id);
-		 	$data=$this->db->update('general_settings',$a);
-		 	if($data)
-		 	{
-		 		redirect(base_url().'apanel/index.jsp');
-		 	}
-
-		 }
-		 else
-		 {
-		 	echo "Both password are not match";?>
-		 	<a href="<?php base_url();?>changepass.jsp">Back</a>
-		 <?php }
-			//$this->db->update('general_settings',$a);
-	}
 	
 }

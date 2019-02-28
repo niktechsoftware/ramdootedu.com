@@ -43,6 +43,7 @@
 
 				$("#ref").change(function(){
 					var classID = $("#ref").val();
+					alert(classID);
 					
 					$.post("<?php echo site_url("home/getSubjects") ?>", {classID : classID}, function(data){
 					    console.log(data)
@@ -123,7 +124,7 @@
 					$('#add<?php echo $i; ?>').click(function(){
 						$("#row<?php echo $i+1;?>").show();
 						$("#add<?php echo $i;?>").hide();
-						$("#del<?php echo $i;?>").hide();
+						$("#del<?php echo $i;?>").show();
 					});
 
 					<?php if($i != 0){?>
