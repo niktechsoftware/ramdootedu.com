@@ -128,7 +128,8 @@
 											var totaly=0;
 											console.log("i", <?php echo $i;?>);
 											var tmp = 0;
-											<?php for($g=1;$g<=7 ;$g++){?>
+											
+											<?php for($g=1;$g<=30 ;$g++){?>
 											var gVal = <?php echo $g;?>
 											//if($('#item_quantity'+gVal).val() > 0 ) {
 												//totaly = totaly + Number($('#sub_total'+gVal).val());
@@ -146,9 +147,10 @@
 													var bal = totalamount + sat + vat- dis;
 													totaly += bal;
 													$("#total_price"+gVal).val(bal);
-													$("#sub_total"+gVal).val(bal)
+													$("#sub_total"+gVal).val(bal);
 													
 												}
+												
 											//}
 											//console.log(Number($('#sub_total<?php echo $g;?>').val()));
 											<?php }?>
