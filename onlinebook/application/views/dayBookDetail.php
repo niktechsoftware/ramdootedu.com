@@ -12,8 +12,8 @@
                                                 <th>Paid By</th>
                                                 <th>Recieved By</th>
                                                 <th>Reason</th>
-                                                <th>Dabit</th>
-                                                 <th>Cradit</th>
+                                                <th>Debit</th>
+                                                 <th>Credit</th>
                                                 <th>Paid Amount</th>
                                                 <th>Closing Balance</th>
                                                 <th>Pay Date</th>

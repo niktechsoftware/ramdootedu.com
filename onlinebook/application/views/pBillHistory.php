@@ -35,7 +35,7 @@
                                                 <th>Mobile</th>
                                                 <th>Product Quantity</th>
                                                 <th>Total Amount</th>
-                                                <th>Smount Paid</th>
+                                                <th>SAmount Paid</th>
                                                 <th>Balance</th>
                                                 <th>Pay Mode</th>
                                                 <th>Date</th>

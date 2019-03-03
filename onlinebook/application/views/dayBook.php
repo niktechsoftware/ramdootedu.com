@@ -29,13 +29,13 @@
 													<option value="all">All</option>
 												</select>
                                             </div>
-                                            <label for="inputEmail3" class="col-sm-2 control-label">Dabit/Cradit</label>
+                                            <label for="inputEmail3" class="col-sm-2 control-label">Debit/Credit</label>
                                             <div class="col-sm-4">
                                                 <select  class="form-control" name="drCr" required="required">
-			                                    	<option value="">-Select Dabit/Cradit-</option>
+			                                    	<option value="">-Select Debit/Credit-</option>
 			                                    	<option value="all">Both</option>
-			                                    	<option value="dabit">Dabit</option>
-			                                    	<option value="cradit">Cradit</option>
+			                                    	<option value="debit">Debit</option>
+			                                    	<option value="credit">Credit</option>
 			                                    </select>
                                             </div>
                                         </div>
